@@ -1,0 +1,41 @@
+.contactContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--large-header-size);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--cinema-blanc);
+}
+
+.input, .textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--cinema-blanc);
+  color: var(--black);
+  border: none;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
