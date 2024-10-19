@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(50, 14, 17, 0.7);
+  padding: 20px 30px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-family: 'Limelight', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 100px;
+}
+
+.navItem {
+  color: var(--cinema-blanc);
+  text-decoration: none;
+}
+
+.navItem:hover {
+  text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+  gap: 40px;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body {
+  padding-top: 70px;
+}
