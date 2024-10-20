@@ -8,15 +8,17 @@ import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/screenings" element={<Screenings />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
+    <>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/screenings" element={<Screenings />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
