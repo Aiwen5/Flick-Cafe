@@ -10,7 +10,7 @@ export default function Screenings() {
         bannerText="Screenings"
         bannerDesc="Experience the joy of movies with curated screenings of classics and new hits. Enjoy great coffee and treats in a cozy setting as you immerse yourself in the movie.
         Check back every week for an updated curation!"
-        bannerImage="/images/screenings-banner.png"
+        bannerImage="/images/screeningsbanner1.png"
       />
       <div className={styles.screeningsContainer}>
         <p className={styles.description}>Flicks of the Week – Nightly at 6 PM</p>
