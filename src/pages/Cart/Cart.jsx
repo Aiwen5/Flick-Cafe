@@ -6,7 +6,7 @@ const CheckoutPage = () => {
     <div className={styles.bigWrapper}>
      
       <div className={styles.leftSide}>
-        <a href="/store" className={styles.backLink}>← Back to Store</a>
+        <a href="/store" className={styles.backbtn}>← Back to Store</a>
 
         <div className={styles.orderStuff}>
           <h2>Pick-up Order</h2>
