@@ -4,8 +4,13 @@ import styles from './Menu.module.css';
 export default function Menu() {
   return (
   <>
+  <div className={styles.bannerContainer}>
+      <img className={styles.bannerImage} src="../images/menuBanner.png" alt="banner" />
+      <h2 className={styles.bannerText}>Menu</h2>
+      <p className={styles.bannerDesc}>From meticulously crafted coffee blends to classic popcorn and candy delights, 
+      our menu is designed to elevate your cinematic experience.</p>
+    </div>
     <div className={styles.menuContainer}>
-      <h1 className={styles.heading}>Menu</h1>
       <hr />
       <h3 className={styles.title}>Coffee</h3>
       <div className={styles.coffee}>
