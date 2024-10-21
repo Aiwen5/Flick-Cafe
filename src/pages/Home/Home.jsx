@@ -7,5 +7,6 @@ export default function Home() {
       <h1 className={styles.heading}>Welcome to Flick Cafe</h1>
       <p className={styles.description}>Enjoy a cup of coffee while watching your favorite movies!</p>
     </div>
+    
   );
 }
