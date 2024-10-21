@@ -1,15 +1,16 @@
 import React from 'react';
 import styles from './Menu.module.css';
+import Banner from '../../components/Banner/Banner';
 
 export default function Menu() {
   return (
   <>
-  <div className={styles.bannerContainer}>
-      <img className={styles.bannerImage} src="../images/menuBanner.png" alt="banner" />
-      <h2 className={styles.bannerText}>Menu</h2>
-      <p className={styles.bannerDesc}>From meticulously crafted coffee blends to classic popcorn and candy delights, 
-      our menu is designed to elevate your cinematic experience.</p>
-    </div>
+    <Banner
+        bannerText="Menu"
+        bannerDesc="From meticulously crafted coffee blends to classic popcorn and candy delights, 
+our menu is designed to elevate your cinematic experience."
+        bannerImage="/images/menuBanner.png"
+      />
     <div className={styles.menuContainer}>
       <hr />
       <h3 className={styles.title}>Coffee</h3>
@@ -29,6 +30,14 @@ export default function Menu() {
         <p className={styles.caramel}>Caramel Macchiato <br/> $5.75</p>
         <p className={styles.white}>White Chocolate Mocha <br/> $4.50</p>
       </div>
+      <div className={styles.addButton}>
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton3} src='../images/plusButton.png' />
+        <img className={styles.plusButton4} src='../images/plusButton.png' />
+        <img className={styles.plusButton5} src='../images/plusButton.png' />
+        <img className={styles.plusButton6} src='../images/plusButton.png' />
+      </div>
       <hr />
       <h3 className={styles.title2}>Teas</h3>
       <div className={styles.tea}>
@@ -46,6 +55,14 @@ export default function Menu() {
         <p className={styles.london}>London Fog <br/> $5.75</p>
         <p className={styles.chai}>Chai Latte <br/> $5.50</p>
         <p className={styles.lavendar}>Lavendar Latte <br/> $5.75</p>
+      </div>
+      <div className={styles.addButton}>
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton3} src='../images/plusButton.png' />
+        <img className={styles.plusButton4} src='../images/plusButton.png' />
+        <img className={styles.plusButton5} src='../images/plusButton.png' />
+        <img className={styles.plusButton6} src='../images/plusButton.png' />
       </div>
     <hr />
       <h3 className={styles.title2}>Sandwiches</h3>
@@ -65,6 +82,14 @@ export default function Menu() {
         <p className={styles.roast}>Roast Beef <br/> $6.50</p>
         <p className={styles.grilled}>Grilled Cheese <br/> $4.75</p>
       </div>
+      <div className={styles.addButton}>
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton3} src='../images/plusButton.png' />
+        <img className={styles.plusButton4} src='../images/plusButton.png' />
+        <img className={styles.plusButton5} src='../images/plusButton.png' />
+        <img className={styles.plusButton6} src='../images/plusButton.png' />
+      </div>
       <hr />
       <h3 className={styles.title2}>Baked Goods</h3>
       <div className={styles.baked}>
@@ -82,6 +107,14 @@ export default function Menu() {
         <p className={styles.loaf}>Banana Loaf <br/> $3.75</p>
         <p className={styles.blueberry}>Blueberry Muffin <br/> $3.50</p>
         <p className={styles.cake}>Cake Pop <br/> $3.50</p>
+      </div>
+      <div className={styles.addButton}>
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton} src='../images/plusButton.png' />
+        <img className={styles.plusButton3} src='../images/plusButton.png' />
+        <img className={styles.plusButton4} src='../images/plusButton.png' />
+        <img className={styles.plusButton5} src='../images/plusButton.png' />
+        <img className={styles.plusButton6} src='../images/plusButton.png' />
       </div>
       <hr />
       <h3 className={styles.title2}>Flick Snacks</h3>
@@ -101,6 +134,14 @@ export default function Menu() {
         <p className={styles.peaches}>Fuzzy Peaches <br/> $3.75</p>
         <p className={styles.candy}>Assorted Candy <br/> $5.00</p>
       </div>
+        <div className={styles.addButton}>
+          <img className={styles.plusButton} src='../images/plusButton.png' />
+          <img className={styles.plusButton} src='../images/plusButton.png' />
+          <img className={styles.plusButton3} src='../images/plusButton.png' />
+          <img className={styles.plusButton4} src='../images/plusButton.png' />
+          <img className={styles.plusButton5} src='../images/plusButton.png' />
+          <img className={styles.plusButton6} src='../images/plusButton.png' />
+        </div>
     </div>
    </>
 
