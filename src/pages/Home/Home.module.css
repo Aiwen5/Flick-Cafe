@@ -79,9 +79,8 @@
 .galleryContainer {
   display: flex;
   gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   justify-content: center;
   border-bottom: solid 2px #717171;
 }
@@ -100,4 +99,42 @@
 
 .galleryCard p {
   margin-top: 0;
+}
+
+.infoOuterContainer {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  border-bottom: solid 2px #717171;
+  justify-content: center;
+}
+
+.infoInnerContainer {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  max-width: 66%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer h4 {
+  font-size: 36px;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.textContainer p {
+  text-align: justify;
+}
+
+.largeImage {
+  max-height: 510px;
+  width: auto;
 }
