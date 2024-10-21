@@ -7,4 +7,393 @@
 
 .heading {
   font-size: var(--large-header-size);
+  color: var(--cinema-blanc);
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: var(--body-size);
+  color: var(--light-grey);
+}
+
+.bannerContainer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 93px;
+  font-family: 'Market Deco';
+  color: #fffcfc;
+  text-align: center;
+  display: inline-block;
+}
+
+.bannerImage {
+  width: inherit;
+  display: block;
+}
+
+.bannerText {
+  position: absolute;
+  margin: 0;
+  top: 71%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  color: #fffcfc;
+  font-size: 80px;
+  width: 100%;
+  font-family: 'Market Deco';
+}
+
+.bannerDesc {
+  position: absolute;
+  font-family: 'Raleway';
+  font-size: 24px;
+  top: 80%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  color: #fffcfc;
+  width: 100%;
+  max-width: 880px;
+}
+
+.heading {
+  font-size: var(--large-header-size);
+}
+
+hr {
+  height: 0;
+  width: auto;
+  opacity: 15%;
+}
+
+.title {
+  display: flex;
+  align-items: start;
+  margin-left: 40px;
+}
+
+.title2 {
+  display: flex;
+  align-items: start;
+  margin-left: 40px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.menuCard {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: light;
+  text-align: left;
+  gap: 50px;
+  margin-left: 40px;
+}
+
+.menuCard2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: light;
+  text-align: left;
+  gap: 50px;
+  margin-left: 40px;
+}
+
+.menuCard3 {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: light;
+  text-align: left;
+  gap: 50px;
+  margin-left: 40px;
+}
+
+.menuCard4 {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: light;
+  text-align: left;
+  gap: 70px;
+  margin-left: 40px;
+}
+
+.menuCard5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: light;
+  text-align: left;
+  gap: 70px;
+  margin-left: 40px;
+}
+
+.coffeeImg {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.teaImg {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.snackImg {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.snackImg2 {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.snackImg3 {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.snackImg4 {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.snackImg5 {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.snackImg6 {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.bakedImg {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sandwichImg {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.coffee {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.tea {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.sandwich {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.baked {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.snacks {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 40px;
+}
+
+.chips {
+  display: flex;
+  margin-left: -35px;
+}
+
+.chocolate {
+  display: flex;
+  margin-left: 20px;
+}
+
+.peaches {
+  display: flex;
+  margin-left: 15px
+}
+
+.candy {
+  display: flex;
+  margin-left: -35px;
+}
+
+.bagel {
+  display: flex;
+  margin-left: -50px;
+}
+
+.croissant {
+  display: flex;
+  position: relative;
+  left: -55px;
+}
+
+.loaf {
+  display: flex;
+  position: relative;
+  left: -90px;
+}
+
+.blueberry {
+  display: flex;
+  position: relative;
+  left: -95px;
+}
+
+.cake {
+  display: flex;
+  position: relative;
+  left: -120px;
+}
+
+.ham {
+  display: flex;
+  position: relative;
+  left: -25px;
+}
+
+.turkey {
+  display: flex;
+  position: relative;
+  left: -35px;
+}
+
+.basil {
+  display: flex;
+  position: relative;
+  left: -50px;
+}
+
+.roast {
+  display: flex;
+  position: relative;
+  left: -65px;
+}
+
+.grilled {
+  display: flex;
+  position: relative;
+  left: -55px;
+}
+
+.black {
+  display: flex;
+  position: relative;
+  left: 10px;
+}
+
+.london {
+  display: flex;
+  position: relative;
+  left: 30px;
+}
+
+.chai {
+  display: flex;
+  position: relative;
+  left: 30px;
+}
+
+.lavendar {
+  display: flex;
+  position: relative;
+  left: 45px;
+}
+
+.americano {
+  display: flex;
+  position: relative;
+}
+
+.cappicino {
+  display: flex;
+  position: relative;
+  left: 10px;
+}
+
+.espresso {
+  display: flex;
+  position: relative;
+  left: 25px;
+}
+
+.caramel {
+  display: flex;
+  position: relative;
+  left: 40px;
+}
+
+.white {
+  display: flex;
+  position: relative;
+  left: 10px;
 }

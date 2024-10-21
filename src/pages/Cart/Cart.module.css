@@ -1,0 +1,83 @@
+.bigWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10%;
+    background-color: #F9F9F9;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .leftSide {
+    width: 65%;
+    padding-right: 40px;
+  }
+  
+  .rightSide {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+
+  }
+  
+  .submitBtn {
+    background-color: #330c17;
+    color: white;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: not-allowed;
+  }
+  
+  .submitBtn:hover {
+    background-color: #4A2569;
+  }
+  
+  .nameRow, .cardDetails {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nameRow input, .emailBox input, .paymentBox input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+
+  .paypalBtn, .applePayBtn {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+ 
+  }
+  
+  .timeBox label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .paymentBox {
+    margin-top: 20px;
+  }
+  
+  .emailBox {
+    margin-bottom: 20px;
+  }
+  
+.backbtn {
+    color: #4e2f2f;
+
+}
