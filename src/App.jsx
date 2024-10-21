@@ -5,6 +5,8 @@ import Home from './pages/Home/Home'; // Import Home Page
 import Menu from './pages/Menu/Menu';
 import Screenings from './pages/Screenings/Screenings';
 import Contact from './pages/Contact/Contact';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/screenings" element={<Screenings />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
