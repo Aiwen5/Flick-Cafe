@@ -6,9 +6,10 @@ export default function Menu() {
   <>
     <div className={styles.menuContainer}>
       <h1 className={styles.heading}>Menu</h1>
+      <hr />
       <h3 className={styles.title}>Coffee</h3>
       <div className={styles.coffee}>
-        <img className={styles.coffeeImg} src='../public/images/caffemocha.png' />
+        <img className={styles.coffeeImg} src='../images/caffemocha.png' />
         <img className={styles.coffeeImg} src='../images/americano.png' />
         <img className={styles.coffeeImg} src='../images/cappicino2.png' />
         <img className={styles.coffeeImg} src='../images/espresso.png' />
@@ -23,6 +24,7 @@ export default function Menu() {
         <p className={styles.caramel}>Caramel Macchiato <br/> $5.75</p>
         <p className={styles.white}>White Chocolate Mocha <br/> $4.50</p>
       </div>
+      <hr />
       <h3 className={styles.title2}>Teas</h3>
       <div className={styles.tea}>
         <img className={styles.teaImg} src='../images/match.png' />
@@ -40,7 +42,7 @@ export default function Menu() {
         <p className={styles.chai}>Chai Latte <br/> $5.50</p>
         <p className={styles.lavendar}>Lavendar Latte <br/> $5.75</p>
       </div>
-    
+    <hr />
       <h3 className={styles.title2}>Sandwiches</h3>
       <div className={styles.sandwich}>
         <img className={styles.sandwichImg} src='../images/chicken.png' />
@@ -58,6 +60,7 @@ export default function Menu() {
         <p className={styles.roast}>Roast Beef <br/> $6.50</p>
         <p className={styles.grilled}>Grilled Cheese <br/> $4.75</p>
       </div>
+      <hr />
       <h3 className={styles.title2}>Baked Goods</h3>
       <div className={styles.baked}>
         <img className={styles.bakedImg} src='../images/cookie.png' />
@@ -75,6 +78,7 @@ export default function Menu() {
         <p className={styles.blueberry}>Blueberry Muffin <br/> $3.50</p>
         <p className={styles.cake}>Cake Pop <br/> $3.50</p>
       </div>
+      <hr />
       <h3 className={styles.title2}>Flick Snacks</h3>
       <div className={styles.snacks}>
         <img className={styles.snackImg} src='../images/popcorn.png' />

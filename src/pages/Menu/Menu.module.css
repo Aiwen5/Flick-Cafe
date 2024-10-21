@@ -9,6 +9,12 @@
   font-size: var(--large-header-size);
 }
 
+hr {
+  height: 0;
+  width: auto;
+  opacity: 15%;
+}
+
 .title {
   display: flex;
   align-items: start;
