@@ -25,7 +25,7 @@ export default function Screenings() {
       />
       <div className={styles.screeningsContainer}>
         <section className={styles.movieOfTheDaySection}>
-          <p className={styles.description}>Today's Featured Movie</p>
+          <p className={styles.description}>Today&apos;s Featured Movie</p>
           <MovieOfTheDay />
         </section>
         <p className={styles.description}>Flicks of the Week – Nightly at 6 PM</p>
