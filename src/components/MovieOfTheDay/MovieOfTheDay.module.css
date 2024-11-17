@@ -22,6 +22,7 @@
   font-size: var(--large-header-size);
   margin-bottom: 10px;
   color: var(--cinema-blanc);
+  font-family: "Market Deco", sans-serif;
 }
 
 .subtitle {
@@ -42,6 +43,27 @@
 }
 
 .countdown {
-  font-size: var(--body-size);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-grey);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.countdownTime {
+  font-size: var(--large-header-size);
   color: var(--cinema-blanc);
+}
+
+.countdownLabel {
+  font-size: var(--body-size);
+  color: var(--light-grey);
 }

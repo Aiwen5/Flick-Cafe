@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
 :root {
   /* Color variables */
-  --header-background: #6F6F6F;
-  --cinema-blanc: #FFFCFC;
+  --header-background: #6f6f6f;
+  --cinema-blanc: #fffcfc;
   --black: #000000;
   --dark-grey: #474747;
-  --medium-grey: #6E6E6E;
-  --light-grey: #DBDBDB;
-  --card-bg: #5F5F5F;
-  --burgundy: #320E11;
+  --medium-grey: #6e6e6e;
+  --light-grey: #dbdbdb;
+  --card-bg: #5f5f5f;
+  --burgundy: #320e11;
   --filmscreen-grey: #292929;
-  --burgundy-hover: #3E0F14;
-  --navbar-hover: #D09C9C;
+  --burgundy-hover: #3e0f14;
+  --navbar-hover: #d09c9c;
 
   /* Text size variables */
   --medium-header-size: 36px;
@@ -33,7 +33,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -45,6 +45,6 @@ body {
 }
 
 @font-face {
-  font-family: 'Market Deco';
-  src: url('/fonts/Market_Deco.ttf');
+  font-family: "Market Deco";
+  src: url("/fonts/Market_Deco.ttf") format("truetype");
 }

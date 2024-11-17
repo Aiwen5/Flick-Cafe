@@ -18,6 +18,7 @@
 .title {
   font-size: var(--medium-header-size);
   margin-bottom: 10px;
+  font-family: "Market Deco", sans-serif;
 }
 
 .subtitle {
