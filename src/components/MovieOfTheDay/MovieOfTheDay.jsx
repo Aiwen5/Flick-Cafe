@@ -25,16 +25,12 @@ function getTimeRemaining(endTime) {
 export default function MovieOfTheDay() {
   const movie = getMovieOfTheDay();
 
-  if (!movie) {
-    return <div className={styles.error}>No movie data available for today.</div>;
-  }
-
-  const imageToShow = movie.imageSrc || placeholderImage;
-
-  const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining(new Date().setHours(18, 0, 0, 0)));
+  const [timeRemaining, setTimeRemaining] = useState(() => getTimeRemaining(new Date().setHours(18, 0, 0, 0)));
   const [status, setStatus] = useState('');
 
   useEffect(() => {
+    if (!movie) return;
+
     const interval = setInterval(() => {
       const endTime = new Date().setHours(18, 0, 0, 0);
       const remaining = getTimeRemaining(endTime);
@@ -42,7 +38,7 @@ export default function MovieOfTheDay() {
 
       const currentTime = new Date();
       const movieEndTime = new Date(endTime);
-      movieEndTime.setMinutes(movieEndTime.getMinutes() + movie.runTime);
+      movieEndTime.setMinutes(movieEndTime.getMinutes() + (movie.runTime || 0));
 
       if (currentTime >= endTime && currentTime <= movieEndTime) {
         setStatus('Currently Playing');
@@ -55,6 +51,12 @@ export default function MovieOfTheDay() {
 
     return () => clearInterval(interval);
   }, [movie]);
+
+  if (!movie) {
+    return <div className={styles.error}>No movie data available for today.</div>;
+  }
+
+  const imageToShow = movie.imageSrc || placeholderImage;
 
   return (
     <div className={styles.movieOfTheDayCard}>
