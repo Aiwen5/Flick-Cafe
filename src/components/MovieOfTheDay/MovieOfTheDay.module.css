@@ -1,0 +1,38 @@
+.movieOfTheDayCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background-color: var(--filmscreen-grey);
+  color: var(--cinema-blanc);
+}
+
+.image {
+  width: 290px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--large-header-size);
+  margin-bottom: 10px;
+  color: var(--cinema-blanc);
+}
+
+.subtitle {
+  font-size: var(--medium-header-size);
+  margin-bottom: 10px;
+  color: var(--light-grey);
+}
+
+.description {
+  font-size: var(--body-size);
+  color: var(--light-grey);
+}
