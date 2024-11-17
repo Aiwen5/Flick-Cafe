@@ -3,12 +3,10 @@ import styles from './MovieCard.module.css';
 
 const placeholderImage = 'https://placehold.co/290x400';
 
-export default function MovieCard({ title, subtitle, description, imageSrc }) {
-  const imageToShow = imageSrc || placeholderImage;
-
+export default function MovieCard({ title, subtitle, description, imageSrc = placeholderImage }) {
   return (
     <div className={styles.card}>
-      <img className={styles.image} src={imageToShow} alt={`${title} Poster`} />
+      <img className={styles.image} src={imageSrc} alt={`${title} Poster`} />
       <div className={styles.content}>
         <h2 className={styles.title}>{title}</h2>
         <h3 className={styles.subtitle}>{subtitle}</h3>
@@ -23,8 +21,4 @@ MovieCard.propTypes = {
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   imageSrc: PropTypes.string,
-};
-
-MovieCard.defaultProps = {
-  imageSrc: '',
 };

@@ -11,8 +11,8 @@
 }
 
 .description {
-  font-size: var(--medium-header-size);
+  font-size: var(--large-header-size);
+  font-family: "Market Deco", sans-serif;
   text-align: center;
   margin-bottom: 30px;
-  color: var(--light-grey);
 }
