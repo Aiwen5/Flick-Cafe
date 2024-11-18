@@ -13,6 +13,7 @@ export default function Header() {
       <nav className={styles.nav}>
         <Link to="/menu" className={styles.navItem}>Menu</Link>
         <Link to="/screenings" className={styles.navItem}>Screenings</Link>
+        <Link to="/reviews" className={styles.navItem}> Reviews</Link>
         <Link to="/contact" className={styles.navItem}>Contact Us</Link>
       </nav>
       <div className={styles.icons}>
