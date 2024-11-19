@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Market+Deco:wght@400&display=swap');
+
 .homeContainer {
-  padding: 20px;
-  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -14,4 +14,126 @@
 .description {
   font-size: var(--body-size);
   color: var(--light-grey);
+}
+
+.bannerContainer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 93px;
+  font-family: 'Market Deco';
+  color: #fffcfc;
+  text-align: center;
+  display: inline-block;
+}
+
+.bannerImage {
+  width: inherit;
+  display: block;
+}
+
+.bannerText {
+  position: absolute;
+  margin: 0;
+  top: 65%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  color: #fffcfc;
+  font-size: 80px;
+  width: 100%;
+  font-family: 'Market Deco';
+}
+
+.ctaLink {
+  position: absolute;
+  margin: 0;
+  top: 72%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+}
+
+.ctaButton {
+  color: #fffcfc;
+  border-radius: 10px;
+  background-color: #330c17;
+  width: 15rem;
+  position: relative;
+  height: 80px;
+  text-align: center;
+  font-size: 20px;
+  color: #fffcfc;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+}
+
+.ctaButton:hover {
+  cursor: pointer;
+  background-color: #4E1928;
+} 
+
+.galleryContainer {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+  border-bottom: solid 2px #717171;
+}
+
+.galleryCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 490px;
+}
+
+.galleryCard h4 {
+  font-size: 36px;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.galleryCard p {
+  margin-top: 0;
+}
+
+.infoOuterContainer {
+  display: flex;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  border-bottom: solid 2px #717171;
+  justify-content: center;
+}
+
+.infoInnerContainer {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  max-width: 66%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textContainer h4 {
+  font-size: 36px;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.textContainer p {
+  text-align: justify;
+}
+
+.largeImage {
+  max-height: 510px;
+  width: auto;
 }

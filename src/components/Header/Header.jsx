@@ -17,7 +17,9 @@ export default function Header() {
         <Link to="/contact" className={styles.navItem}>Contact Us</Link>
       </nav>
       <div className={styles.icons}>
-        <FaShoppingBag className={styles.icon} />
+        <Link to="/cart" className={styles.icon}>
+          <FaShoppingBag />
+        </Link>
         <FaUser className={styles.icon} />
       </div>
     </header>

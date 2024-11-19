@@ -1,0 +1,69 @@
+.movieOfTheDayCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  color: var(--cinema-blanc);
+}
+
+.image {
+  width: 290px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--large-header-size);
+  margin-bottom: 10px;
+  color: var(--cinema-blanc);
+  font-family: "Market Deco", sans-serif;
+}
+
+.subtitle {
+  font-size: var(--medium-header-size);
+  margin-bottom: 10px;
+  color: var(--light-grey);
+}
+
+.description {
+  font-size: var(--body-size);
+  color: var(--light-grey);
+}
+
+.status {
+  font-size: var(--medium-header-size);
+  margin-top: 10px;
+  color: var(--cinema-blanc);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-grey);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.countdownTime {
+  font-size: var(--large-header-size);
+  color: var(--cinema-blanc);
+}
+
+.countdownLabel {
+  font-size: var(--body-size);
+  color: var(--light-grey);
+}
