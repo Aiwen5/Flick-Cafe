@@ -7,6 +7,7 @@ import Screenings from './pages/Screenings/Screenings';
 import Contact from './pages/Contact/Contact';
 import Cart from './pages/Cart/Cart';
 import Footer from './components/Footer/Footer';
+import Reviews from './pages/Reviews/Reviews';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/screenings" element={<Screenings />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/reviews" element={<Reviews />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer></Footer>
