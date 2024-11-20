@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styles from "./Reviews.module.css";
+
 
 export default function MovieReviewCarousel() {
   const [movies, setMovies] = useState([
@@ -7,25 +9,68 @@ export default function MovieReviewCarousel() {
       title: "The Lion King",
       image: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
       reviews: [
-        { user: "John", comment: "Amazing!", rating: 5 },
-        { user: "Jane", comment: "Loved it!", rating: 4 },
+        { user: "John", comment: "Absolutely loved watching this!", rating: 5 },
+        { user: "Jane", comment: "My girlfriend and I had a great time!", rating: 4 },
       ],
     },
     {
       id: 2,
-      title: "Inception",
-      image: "https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg",
+      title: "The Wolf of Wall Street",
+      image: "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Wolf_of_Wall_Street_%282013%29.png",
       reviews: [{ user: "Alice", comment: "Mind-blowing!", rating: 5 }],
     },
+
+    {
+      id: 3,
+      title: "Freaky Friday",
+      image: "https://upload.wikimedia.org/wikipedia/en/9/98/Freaky_Friday_%282003_film%29.png",
+      reviews: [{ user: "George", comment: "Freaky on a friday night indeed!", rating: 5 }],
+    },
+
+    {
+      id: 4,
+      title: "Indiana Jones & the Crystal Skull",
+      image: "https://upload.wikimedia.org/wikipedia/en/d/d5/Kingdomofthecrystalskull.jpg",
+      reviews: [{ user: "Devon", comment: "Indiana Jones is such a classic!", rating: 4 }],
+    },
+
+    {
+      id: 5,
+      title: "The Orphanage",
+      image: "https://upload.wikimedia.org/wikipedia/en/2/2d/Elorfanato.jpg",
+      reviews: [{ user: "Evan", comment: "Mind-blowing!", rating: 4 }],
+    },
+
+    {
+      id: 6,
+      title: "Alfred Hitchcock's Psycho",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg/1920px-Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg",
+      reviews: [{ user: "Cally", comment: "This one blew my mind!", rating: 5 }],
+    },
+
+    {
+      id: 7,
+      title: "Blade Runner 2049",
+      image: "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
+      reviews: [{ user: "Shirin", comment: "I love Ryan Gosling!", rating: 5 }],
+    },
+
+
+
+
+
+
+
+
+
   ]);
 
   const [currentMovieIndex, setCurrentMovieIndex] = useState(0);
 
-  // Navigate to the next or previous movie
+ 
   const handleNext = () => setCurrentMovieIndex((currentMovieIndex + 1) % movies.length);
   const handlePrev = () => setCurrentMovieIndex((currentMovieIndex - 1 + movies.length) % movies.length);
 
-  // Add a new review to the current movie
   const addReview = (newReview) => {
     setMovies((prevMovies) =>
       prevMovies.map((movie, index) =>
@@ -82,29 +127,29 @@ function ReviewForm({ onAddReview }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: "10px" }}>
-      <label>
-        Rating:
-        <select value={rating} onChange={(e) => setRating(e.target.value)}>
-          {[1, 2, 3, 4, 5].map((star) => (
-            <option key={star} value={star}>
-              {star}
-            </option>
-          ))}
-        </select>
-      </label>
-      <br />
+    <form onSubmit={handleSubmit} >
+   <label>
+  Rating:
+  <select value={rating} onChange={(e) => setRating(e.target.value)}>
+    {[1, 2, 3, 4, 5].map((rating) => (
+      <option key={rating} value={rating}>
+        {rating} 
+      </option>
+    ))}
+  </select>
+</label>
+<br />
       <label>
         Comment:
         <input
           type="text"
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          style={{ width: "200px", margin: "5px 0" }}
+          style={{ width: "500px", margin: "100px 0" }}
         />
       </label>
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit" className="submit-button">Submit</button>
     </form>
   );
 }
