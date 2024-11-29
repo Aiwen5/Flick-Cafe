@@ -1,0 +1,207 @@
+{
+  "coffee": {
+    "category": "Coffee",
+    "items": [
+      {
+        "id": "caffe-mocha",
+        "title": "Caffe Mocha",
+        "price": 4.50,
+        "image": "/images/caffemocha.png"
+      },
+      {
+        "id": "americano",
+        "title": "Americano",
+        "price": 5.50,
+        "image": "/images/americano.png"
+      },
+      {
+        "id": "cappucino",
+        "title": "Cappucino",
+        "price": 4.75,
+        "image": "/images/cappicino2.png"
+      },
+      {
+        "id": "espresso",
+        "title": "Espresso",
+        "price": 5.00,
+        "image": "/images/espresso.png"
+      },
+      {
+        "id": "caramel-macchiato",
+        "title": "Caramel Macchiato",
+        "price": 5.75,
+        "image": "/images/caramel.png"
+      },
+      {
+        "id": "white-chocolate-mocha",
+        "title": "White Chocolate Mocha",
+        "price": 4.50,
+        "image": "/images/choclatemocha.png"
+      }
+    ]
+  },
+  "teas": {
+    "category": "Teas",
+    "items": [
+      {
+        "id": "matcha-latte",
+        "title": "Matcha Latte",
+        "price": 5.50,
+        "image": "/images/match.png"
+      },
+      {
+        "id": "green-tea",
+        "title": "Green Tea",
+        "price": 4.00,
+        "image": "/images/green.png"
+      },
+      {
+        "id": "black-tea",
+        "title": "Black Tea",
+        "price": 4.00,
+        "image": "/images/black.png"
+      },
+      {
+        "id": "london-fog",
+        "title": "London Fog",
+        "price": 5.75,
+        "image": "/images/london.png"
+      },
+      {
+        "id": "chai-latte",
+        "title": "Chai Latte",
+        "price": 5.50,
+        "image": "/images/chai.png"
+      },
+      {
+        "id": "lavender-latte",
+        "title": "Lavender Latte",
+        "price": 5.75,
+        "image": "/images/lavendar.png"
+      }
+    ]
+  },
+  "sandwiches": {
+    "category": "Sandwiches",
+    "items": [
+      {
+        "id": "chicken-bacon",
+        "title": "Chicken & Bacon",
+        "price": 6.50,
+        "image": "/images/chicken.png"
+      },
+      {
+        "id": "ham-cheese",
+        "title": "Ham & Cheese",
+        "price": 6.00,
+        "image": "/images/ham.png"
+      },
+      {
+        "id": "turkey-bacon",
+        "title": "Turkey & Bacon",
+        "price": 6.50,
+        "image": "/images/turkey.png"
+      },
+      {
+        "id": "basil-tomato",
+        "title": "Basil & Tomato",
+        "price": 5.50,
+        "image": "/images/tomato.png"
+      },
+      {
+        "id": "roast-beef",
+        "title": "Roast Beef",
+        "price": 6.50,
+        "image": "/images/roast.png"
+      },
+      {
+        "id": "grilled-cheese",
+        "title": "Grilled Cheese",
+        "price": 4.75,
+        "image": "/images/grilled.png"
+      }
+    ]
+  },
+  "bakedGoods": {
+    "category": "Baked Goods",
+    "items": [
+      {
+        "id": "chocolate-chip-cookie",
+        "title": "Chocolate Chip Cookie",
+        "price": 3.50,
+        "image": "/images/cookie.png"
+      },
+      {
+        "id": "bagel-cream-cheese",
+        "title": "Bagel w/Cream Cheese",
+        "price": 3.75,
+        "image": "/images/bagel.png"
+      },
+      {
+        "id": "chocolate-croissant",
+        "title": "Chocolate Croissant",
+        "price": 4.50,
+        "image": "/images/croisant.png"
+      },
+      {
+        "id": "banana-loaf",
+        "title": "Banana Loaf",
+        "price": 3.75,
+        "image": "/images/loaf.png"
+      },
+      {
+        "id": "blueberry-muffin",
+        "title": "Blueberry Muffin",
+        "price": 3.50,
+        "image": "/images/blueberry.png"
+      },
+      {
+        "id": "cake-pop",
+        "title": "Cake Pop",
+        "price": 3.50,
+        "image": "/images/cake.png"
+      }
+    ]
+  },
+  "flickSnacks": {
+    "category": "Flick Snacks",
+    "items": [
+      {
+        "id": "popcorn",
+        "title": "Popcorn",
+        "price": 5.00,
+        "image": "/images/popcorn.png"
+      },
+      {
+        "id": "sour-patch-kids",
+        "title": "Sour Patch Kids",
+        "price": 3.50,
+        "image": "/images/sour.png"
+      },
+      {
+        "id": "chips",
+        "title": "Chips",
+        "price": 3.75,
+        "image": "/images/chips.png"
+      },
+      {
+        "id": "m-and-ms",
+        "title": "M&M's",
+        "price": 2.50,
+        "image": "/images/m&m.png"
+      },
+      {
+        "id": "fuzzy-peaches",
+        "title": "Fuzzy Peaches",
+        "price": 3.75,
+        "image": "/images/peaches.png"
+      },
+      {
+        "id": "assorted-candy",
+        "title": "Assorted Candy",
+        "price": 5.00,
+        "image": "/images/candy.png"
+      }
+    ]
+  }
+}

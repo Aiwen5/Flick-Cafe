@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -62,6 +62,15 @@
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.icons button {
+  background-color: none;
+  padding: 0;
+}
+
+.icons button:hover {
+  background: none;
 }
 
 body {
