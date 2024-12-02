@@ -1,0 +1,45 @@
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+}
+
+.top img {
+  max-width: 180px;
+  height: auto;
+}
+
+.bottom .text {
+  text-align: left;
+  line-height: 25px;
+}
+
+.bottom p {
+  margin: 0;
+  padding: 0;
+}
+
+.btnRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom button {
+  background: #330c17;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+}
+
+.bottom button:hover {
+  background: #4e1928;
+  cursor: pointer;
+}
+
+.bottom button img {
+  width: 11px;
+  height: 11px;
+}

@@ -1,0 +1,30 @@
+.cartOverlay {
+  position: fixed;
+  background-color: #292929;
+  z-index: 3;
+  padding: 60px;
+  top: 0;
+  right: -800px;
+  transition: all ease-in-out .25s;
+  height: 100vh;
+  width: 550px;
+}
+
+.open {
+  right: 0;
+}
+
+.top .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .row button {
+  align-self: center;
+}
+
+.cartItems {
+  overflow-y: scroll;
+  height: 50vh;
+}

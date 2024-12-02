@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import { FaShoppingBag, FaUser } from 'react-icons/fa';
 
-export default function Header() {
+export default function Header({setOverlayOpen}) {
   return (
     <header className={styles.header}>
       <Link to="/" className={styles.logo}>
@@ -17,9 +17,9 @@ export default function Header() {
         <Link to="/contact" className={styles.navItem}>Contact Us</Link>
       </nav>
       <div className={styles.icons}>
-        <Link to="/cart" className={styles.icon}>
+        <button className={styles.icon} onClick={() => setOverlayOpen(true)}>
           <FaShoppingBag />
-        </Link>
+        </button>
         <FaUser className={styles.icon} />
       </div>
     </header>
