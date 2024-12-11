@@ -5,7 +5,7 @@ const MenuItem = ({ item, category, buttonHandler }) => {
   return (
     <div className={styles.menuItem}>
       <div className={styles.top}>
-        <img src={image} />
+        <img src={image} alt={title} />
       </div>
       <div className={styles.bottom}>
         <div className={styles.text}>
@@ -14,7 +14,7 @@ const MenuItem = ({ item, category, buttonHandler }) => {
         <div className={styles.btnRow}>
           <p>${(Math.round(price * 100) / 100).toFixed(2)}</p>
           <button onClick={() => buttonHandler(id, price, title, image)}>
-            <img src="/images/plus-icon.svg" />
+            <img src="/images/plus-icon.svg" alt="Add" />
           </button>
         </div>
       </div>

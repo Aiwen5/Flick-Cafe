@@ -22,7 +22,7 @@ const CartItemCheckout = () => {
       {Object.values(items).map((item) => {
         const {quantity, price, title, image} = item;
         return (
-          <div><CartItem {...{quantity, price, title, image}} /></div>
+          <div key={title}><CartItem {...{quantity, price, title, image}} /></div>
         )
       })}
     </div>
