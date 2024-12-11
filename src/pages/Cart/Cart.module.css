@@ -1,148 +1,152 @@
 .bigWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 10%;
-    background-color: #F9F9F9;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-  }
-
-  input[type='radio'] {
-    accent-color: #330C17;
-    height: 18px;
-    width: 18px;
-    margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 10%;
+  background-color: #f9f9f9;
+  font-family: "Raleway", sans-serif;
+  color: black;
 }
-  
-  .leftSide {
-    width: 65%;
-    padding-right: 40px;
-  }
-  
-  .rightSide {
-    width: 30%;
-    background-color: #F9F9F9;
-    padding: 20px;
-    margin-top: 40px;
-  }
 
-  .mapImage {
-    width: 100%;
-  }
-  
-  .submitBtn {
-    width: 100%;
-    padding: 24px 0;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-    display: block; 
-    text-align: center;
-    background-color: #330C17;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .submitBtn:hover {
-    background-color: #682029;
-  }
-  
-  .nameRow, .cardDetails {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nameRow input, .emailBox input, .paymentBox input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .paypalBtn, .applePayBtn {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    font-size: 1rem;
-    text-decoration: none;
-  }
+input[type="radio"] {
+  accent-color: #330c17;
+  height: 18px;
+  width: 18px;
+  margin-bottom: 3px;
+}
 
-  .paypalBtn {
-    width: auto;
-  }
-  
-  .paypalBtn:hover {
-    background: #3e0f14;
-    color: white;
-  }
+.leftSide {
+  width: 65%;
+  padding-right: 40px;
+}
 
-  .applePayBtn:hover {
-    background: #3e0f14;
-    color: white;
-  }
+.rightSide {
+  width: 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 40px;
+}
 
-  .paypalBtn img {
-    height: 30px;
-    width: auto;
-  }
+.mapImage {
+  width: 100%;
+}
 
-  .applePayBtn img {
-    height: 34px;
-    width: auto;
-  }
+.submitBtn {
+  width: 100%;
+  padding: 24px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: #330c17;
+  color: white;
+  border-radius: 10px;
+}
 
-  .applePayBtn {
-    margin-bottom: 100px;
-  }
+.submitBtn:hover {
+  background-color: #682029;
+}
 
-  .timeBox label {
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .paymentBox {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .paymentBox input {
-    width: auto;
-  }
+.nameRow,
+.cardDetails {
+  display: flex;
+  gap: 20px;
+}
 
-  .cardDetails input {
-    width: 100%;
-  }
+.nameRow input,
+.emailBox input,
+.paymentBox input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+}
 
-  .emailBox {
-    margin-bottom: 20px;
-    display: flex;
-  }
-  
+.paypalBtn,
+.applePayBtn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.paypalBtn {
+  width: auto;
+}
+
+.paypalBtn:hover {
+  background: #3e0f14;
+  color: white;
+}
+
+.applePayBtn:hover {
+  background: #3e0f14;
+  color: white;
+}
+
+.paypalBtn img {
+  height: 30px;
+  width: auto;
+}
+
+.applePayBtn img {
+  height: 34px;
+  width: auto;
+}
+
+.applePayBtn {
+  margin-bottom: 100px;
+}
+
+.timeBox label {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.paymentBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paymentBox input {
+  width: auto;
+}
+
+.cardDetails input {
+  width: 100%;
+}
+
+.emailBox {
+  margin-bottom: 20px;
+  display: flex;
+}
+
 .backbtn {
-    color: #4e2f2f;
-    text-decoration: none;
+  color: #4e2f2f;
+  text-decoration: none;
 }
 
 .subTotalRow {
@@ -150,16 +154,41 @@
   padding-bottom: 1rem;
 }
 
-.subTotalRow, .taxRow, .totalRow {
+.subTotalRow,
+.taxRow,
+.totalRow {
   display: flex;
   justify-content: space-between;
 }
 
-.subTotalRow p, .taxRow p {
+.subTotalRow p,
+.taxRow p {
   margin: 0;
 }
 
 .totalRow {
   font-weight: 600;
   margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .bigWrapper {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  .leftSide,
+  .rightSide {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .rightSide {
+    margin-top: 20px;
+  }
+
+  .submitBtn {
+    margin-top: 20px;
+  }
 }
