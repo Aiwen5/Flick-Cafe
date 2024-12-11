@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Market+Deco:wght@400&display=swap");
+
 .carouselContainer {
   text-align: center;
   padding: 30px;
@@ -6,9 +8,8 @@
   background: linear-gradient(45deg, #1e1e1e, #292929, #1e1e1e);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   max-width: 800px;
+  font-family: "Market Deco";
 }
-
-
 
 .header {
   font-size: 2.5rem;
@@ -33,9 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 
 .movieCard {
   text-align: center;
@@ -46,7 +45,6 @@
   width: 250px;
   border-radius: 10px;
   margin-bottom: 15px;
-
 }
 
 .movieTitle {
@@ -56,16 +54,21 @@
 
 .reviews {
   margin-top: 20px;
+  font-family: "Raleway", sans-serif;
 }
 
 .reviewsHeader {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .review {
   font-size: 1rem;
   margin: 5px 0;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .noReviews {
@@ -76,14 +79,15 @@
 .reviewForm {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 20px;
 }
 
 .formLabel {
   font-size: 1rem;
   color: white;
+  text-align: left;
 }
 
 .ratingSelect,
@@ -100,17 +104,42 @@
 }
 
 .submitButton {
- background-color: #2f0f17;
+  background-color: #2f0f17;
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
-  border-radius: 25px;
-
+  border-radius: 8px;
+  margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .reviewForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .ratingSelect,
+  .commentInput,
+  .submitButton {
+    max-width: 90%;
+  }
+
+  .submitButton {
+    margin-left: 0;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
 
 @media (max-width: 480px) {
- 
+  .navButton {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
   }
+}
