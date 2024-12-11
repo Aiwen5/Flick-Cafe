@@ -1,67 +1,65 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Reviews.module.css";
 
 export default function MovieReviewCarousel() {
-  const [movies, setMovies] = useState([
-    {
-      id: 1,
-      title: "Jurassic Park",
-      image: "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
-      reviews: [
-        { user: "John", comment: "Absolutely loved watching this!", rating: 5 },
-        { user: "Jane", comment: "My girlfriend and I had a great time!", rating: 4 },
-      ],
-    },
-    {
-      id: 2,
-      title: "The Godfather",
-      image: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
-      reviews: [],
-    },
-    
-    {
-      id: 3,
-      title: "Superbad",
-      image: "https://upload.wikimedia.org/wikipedia/en/8/8b/Superbad_Poster.png",
-      reviews: [],
-    },
-
-    {
-      id: 4,
-      title: "Inception",
-      image: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
-      reviews: [],
-    },
-
-    {
-      id: 5,
-      title: "Back to the Future",
-      image: "https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg",
-      reviews: [],
-    },
-
-    {
-      id: 6,
-      title: "Toy Story",
-      image: "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
-      reviews: [],
-    } ,   
-
-    {
-      id: 7,
-      title: "The Matrix",
-      image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
-      reviews: [],
-    },
-    
-  ]);
+  const [movies, setMovies] = useState(() => {
+    const savedMovies = localStorage.getItem("movies");
+    return savedMovies
+      ? JSON.parse(savedMovies)
+      : [
+          {
+            id: 1,
+            title: "Jurassic Park",
+            image: "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
+            reviews: [
+              { user: "John", comment: "Absolutely loved watching this!", rating: 5 },
+              { user: "Jane", comment: "My girlfriend and I had a great time!", rating: 4 },
+            ],
+          },
+          {
+            id: 2,
+            title: "The Godfather",
+            image: "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+            reviews: [],
+          },
+          {
+            id: 3,
+            title: "Superbad",
+            image: "https://upload.wikimedia.org/wikipedia/en/8/8b/Superbad_Poster.png",
+            reviews: [],
+          },
+          {
+            id: 4,
+            title: "Inception",
+            image: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+            reviews: [],
+          },
+          {
+            id: 5,
+            title: "Back to the Future",
+            image: "https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg",
+            reviews: [],
+          },
+          {
+            id: 6,
+            title: "Toy Story",
+            image: "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+            reviews: [],
+          },
+          {
+            id: 7,
+            title: "The Matrix",
+            image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+            reviews: [],
+          },
+        ];
+  });
 
   const [currentMovieIndex, setCurrentMovieIndex] = useState(0);
 
-  const handleNext = () =>
-    setCurrentMovieIndex((currentMovieIndex + 1) % movies.length);
-  const handlePrev = () =>
-    setCurrentMovieIndex((currentMovieIndex - 1 + movies.length) % movies.length);
+  useEffect(() => {
+    localStorage.setItem("movies", JSON.stringify(movies));
+  }, [movies]);
 
   const addReview = (newReview) => {
     setMovies((prevMovies) =>
@@ -74,6 +72,12 @@ export default function MovieReviewCarousel() {
   };
 
   const currentMovie = movies[currentMovieIndex];
+
+  const handleNext = () =>
+    setCurrentMovieIndex((currentMovieIndex + 1) % movies.length);
+
+  const handlePrev = () =>
+    setCurrentMovieIndex((currentMovieIndex - 1 + movies.length) % movies.length);
 
   return (
     <div className={styles.carouselContainer}>

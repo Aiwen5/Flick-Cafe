@@ -1,5 +1,3 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 function Footer() {
   return (
@@ -20,9 +18,7 @@ function Footer() {
         <div className={styles.footerSection}>
           <h3>Connect with Us</h3>
           <div className={styles.socialIcons}>
-            <img src="https://via.placeholder.com/30" alt="Facebook" />
-            <img src="https://via.placeholder.com/30" alt="Twitter" />
-            <img src="https://via.placeholder.com/30" alt="Instagram" />
+            <p>Facebook<br />Instagram<br />Twitter X</p>
           </div>
         </div>
       </div>

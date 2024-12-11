@@ -54,7 +54,6 @@
   margin-bottom: -180px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .bannerText {
     font-size: 60px;
@@ -71,7 +70,7 @@
   }
 
   .bannerDesc {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: -60px;
   }
 }
@@ -82,7 +81,7 @@
   }
 
   .bannerDesc {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: -40px;
   }
 }
