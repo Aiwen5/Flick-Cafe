@@ -8,11 +8,13 @@ import Contact from './pages/Contact/Contact';
 import Cart from './pages/Cart/Cart';
 import Footer from './components/Footer/Footer';
 import Reviews from './pages/Reviews/Reviews';
+import Confirmed from './pages/Confirmed/Confirmed';
 import { useState } from 'react';
 import './App.css';
 
 function App() {
   const [overlayCategories, setOverlayCategories] = useState({});
+
   return (
     <div className="App">
       <Header {...{overlayCategories, setOverlayCategories}} />
@@ -22,7 +24,8 @@ function App() {
         <Route path="/screenings" element={<Screenings />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart />} /> 
+        <Route path="/confirm" element={<Confirmed />} />
       </Routes>
       <Footer></Footer>
     </div>

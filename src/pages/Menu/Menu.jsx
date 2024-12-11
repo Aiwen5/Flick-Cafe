@@ -25,15 +25,16 @@ export default function Menu({setOverlayCategories}) {
     fetchMenuData();
   }, []);
 
-  const buttonHandler = (id, price) => {
+  const buttonHandler = (id, price, title, image) => {
     setOverlayCategories((prev) => {
       const existingItem = prev[id];
-      console.log('prev val in menu', prev)
       return {
         ...prev,
         [id]: {
           quantity: existingItem ? existingItem.quantity + 1 : 1,
           price: price,
+          title: title, 
+          image: image
         },
       };
     });

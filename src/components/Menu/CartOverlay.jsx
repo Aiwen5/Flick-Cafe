@@ -48,7 +48,7 @@ const CartOverlay = ({cartItems, setOverlayOpen, overlayOpen, setItemQtyState, s
     updateSubtotal(cartItems)
   }, [cartItems])
 
-  const updateStorage = (id, newQuantity) => {
+  const updateStorage = (id, newQuantity, title, price) => {
     const updatedCartItems = { ...cartItems };
   
     if (newQuantity === 0) {
@@ -66,8 +66,8 @@ const CartOverlay = ({cartItems, setOverlayOpen, overlayOpen, setItemQtyState, s
     const [quantityState, setQuantityState] = useState(quantity);
     const { title, price, image, id } = item;
     useEffect(() => {
-      updateStorage(id, quantityState);
-    },[quantityState, id, updateStorage])
+      updateStorage(id, quantityState, image, title);
+    },[quantityState, id, updateStorage, image, title])
     return (
       <div>
         <div className={styles.menuItem}>
