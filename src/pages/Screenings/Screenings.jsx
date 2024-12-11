@@ -2,19 +2,9 @@ import styles from './Screenings.module.css';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import Banner from '../../components/Banner/Banner';
 import MovieOfTheDay from '../../components/MovieOfTheDay/MovieOfTheDay';
-import MovieDatabase from '../../data/MovieDatabase';
-
-const getCurrentWeekNumber = () => {
-  const today = new Date();
-  const startOfYear = new Date(today.getFullYear(), 0, 1);
-  const pastDaysOfYear = (today - startOfYear) / 86400000;
-  return Math.ceil((pastDaysOfYear + startOfYear.getDay() + 1) / 7);
-};
+import MovieDatabase, { currentWeek } from '../../data/MovieDatabase';
 
 export default function Screenings() {
-  const currentWeekNumber = getCurrentWeekNumber();
-  const currentWeek = `week${currentWeekNumber % 2 === 0 ? 2 : 1}`; // Alternating weeks
-
   return (
     <>
       <Banner
