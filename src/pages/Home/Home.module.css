@@ -201,13 +201,17 @@
 
 @media screen and (max-width: 768px) {
   .bannerText {
-    font-size: 40px;
+    font-size: 30px;
     top: 50%;
   }
 
   .ctaButton {
-    width: 10rem;
-    height: 60px;
-    font-size: 16px;
+    width: 7rem;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .largeImage {
+    max-height: 200px;
   }
 }
