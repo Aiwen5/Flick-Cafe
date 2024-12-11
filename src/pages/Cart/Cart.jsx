@@ -1,7 +1,30 @@
 import React from 'react';
 import styles from './Cart.module.css'; 
+import CartItemCheckout from '../../components/Cart/CartItemCheckout';
+
+const items = JSON.parse(localStorage.getItem("cartItems")) || {};
+
+const subTotal = localStorage.getItem("subTotal");
+localStorage.setItem("checkout", localStorage.getItem("cartItems"));
 
 const CheckoutPage = () => {
+  const [firstName, setFirstName] = React.useState(localStorage.getItem("firstName") || "");
+  const [lastName, setLastName] = React.useState(localStorage.getItem("lastName") || "");
+
+  React.useEffect(() => {
+    if (firstName) {
+      localStorage.setItem("firstName", firstName);
+    } else {
+      localStorage.removeItem("firstName"); 
+    }
+
+    if (lastName) {
+      localStorage.setItem("lastName", lastName);
+    } else {
+      localStorage.removeItem("lastName"); 
+    }
+  }, [firstName, lastName]);
+
   return (
     <div className={styles.bigWrapper}>
      
@@ -12,7 +35,7 @@ const CheckoutPage = () => {
           <h2>Pick-up Order</h2>
           <div className={styles.mapBox}>
            
-          <img src="/mapimage.png" alt="Map placeholder" />
+          <img className={styles.mapImage} src="/mapimage.png" alt="Map placeholder" />
             <p>Store Address: 1920 Willingdon Ave, Burnaby, BC</p>
           </div>
 
@@ -32,54 +55,52 @@ const CheckoutPage = () => {
             <h3>Contact and Payment</h3>
 
             <div className={styles.emailBox}>
-              <input type="email" placeholder="Email" value="Email" />
+              <input type="email" placeholder="Email" />
             </div>
             <div className={styles.nameRow}>
-              <input type="text" placeholder="First name" value="First name" />
-              <input type="text" placeholder="Last name" value="Last name" />
+              <input type="text" placeholder="First name" value={firstName} onChange={(e)=> setFirstName(e.target.value)}/>
+              <input type="text" placeholder="Last name" value={lastName}
+              onChange={(e)=> setLastName(e.target.value)}/>
             </div>
 
             <h3>Payment Methods</h3>
             <div className={styles.paymentBox}>
-              <input type="text" placeholder="Name on Card" value="Name on Card" />
-              <input type="text" placeholder="Card Number" value="Card Number" />
+              <input type="text" placeholder="Name on Card"/>
+              <input type="text" placeholder="Card Number"/>
               <div className={styles.cardDetails}>
-                <input type="text" placeholder="Expiration MM/YY" value="Expiration  MM/YY" />
-                <input type="text" placeholder="CVV" value="CVV" />
+                <input type="text" placeholder="Expiration MM/YY"/>
+                <input type="text" placeholder="CVV"/>
               </div>
               <div className={styles.cardLogos}>
              
               </div>
             </div>
 
-            <button className={styles.paypalBtn} >PayPal</button>
-            <button className={styles.applePayBtn} >Apple Pay</button>
+            <a className={styles.paypalBtn} target="_blank" href="https://www.paypal.com/ca/home"><img src="/images/PayPal.png"/>PayPal</a>
+            <a className={styles.paypalBtn} target="_blank" href="https://www.apple.com/ca/apple-pay/"><img src="/images/ApplePay.png"/>Apple Pay</a>
           </div>
         </div>
       </div>
 
 
       <div className={styles.rightSide}>
-        <h3>Your Order</h3>
-        <div className={styles.itemRow}>
-          <span>Caffè Mocha</span>
-          <span>$4.50</span>
-        </div>
+        <CartItemCheckout />
         <div className={styles.totalStuff}>
           <div className={styles.subTotalRow}>
-            <span>Subtotal</span>
-            <span>$4.50</span>
+            <p>Subtotal</p>
+            <p>${(Math.round(subTotal * 100) / 100).toFixed(2)}</p>
           </div>
           <div className={styles.taxRow}>
-            <span>Estimated Tax</span>
-            <span>$0.20</span>
+            <p>Estimated Tax</p>
+            <p>${(Math.round(subTotal * 0.5 * 100) / 100).toFixed(2)}</p>
           </div>
+          <hr/>
           <div className={styles.totalRow}>
-            <span>Total</span>
-            <span>$4.70</span>
+            <p>TOTAL</p>
+            <p>${(Math.round(subTotal * 1.5 * 100) / 100).toFixed(2)}</p>
           </div>
         </div>
-        <button className={styles.submitBtn} disabled>Place Pick-up Order</button>
+        <a className={styles.submitBtn} href="/confirm">Place Pick-up Order</a>
       </div>
     </div>
   );
