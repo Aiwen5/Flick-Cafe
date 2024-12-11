@@ -2,7 +2,7 @@ import styles from './Screenings.module.css';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import Banner from '../../components/Banner/Banner';
 import MovieOfTheDay from '../../components/MovieOfTheDay/MovieOfTheDay';
-import MovieDatabase, { currentWeek } from '../../data/MovieDatabase'; // Import currentWeek
+import MovieDatabase, { currentWeek } from '../../data/MovieDatabase';
 
 export default function Screenings() {
   return (
