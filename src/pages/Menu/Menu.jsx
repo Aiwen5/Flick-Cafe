@@ -4,24 +4,9 @@ import styles from "./Menu.module.css";
 import Banner from "../../components/Banner/Banner";
 import MenuItem from "../../components/Menu/MenuItem";
 import CartOverlay from "../../components/Menu/CartOverlay";
-
-export default function Menu({overlayOpen, setOverlayOpen}) {
+ 
+export default function Menu({setOverlayCategories}) {
   const [menuData, setMenuData] = useState(null);
-  const [categories, setCategories] = useState({});
-  const [overlayCategories, setOverlayCategories] = useState({});
-
-  useEffect(() => {
-    if (overlayOpen) {
-      document.body.classList.add("overlay-open");
-    } else {
-      document.body.classList.remove("overlay-open");
-    }
-
-    // Optional cleanup in case the component unmounts
-    return () => {
-      document.body.classList.remove("overlay-open");
-    };
-  }, [overlayOpen]);
 
   useEffect(() => {
     const fetchMenuData = async () => {
@@ -41,8 +26,9 @@ export default function Menu({overlayOpen, setOverlayOpen}) {
   }, []);
 
   const buttonHandler = (id, price) => {
-    setCategories((prev) => {
+    setOverlayCategories((prev) => {
       const existingItem = prev[id];
+      console.log('prev val in menu', prev)
       return {
         ...prev,
         [id]: {
@@ -53,20 +39,8 @@ export default function Menu({overlayOpen, setOverlayOpen}) {
     });
   };
 
-  useEffect(() => {
-  const existingCategories = JSON.parse(localStorage.getItem("cartItems")) || {};
-
-  const updatedCategories = { ...existingCategories, ...categories };
-
-  localStorage.setItem("cartItems", JSON.stringify(updatedCategories));
-
-  setOverlayCategories(updatedCategories);
-}, [categories]);
-
   return (
     <>
-
-      <CartOverlay cartItems={overlayCategories} {...{setOverlayCategories, setOverlayOpen, overlayOpen}} />
       <Banner
         bannerText="Menu"
         bannerDesc="From meticulously crafted coffee blends to classic popcorn and candy delights, 

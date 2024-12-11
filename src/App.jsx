@@ -12,13 +12,13 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [overlayOpen, setOverlayOpen] = useState(false);
+  const [overlayCategories, setOverlayCategories] = useState({});
   return (
     <div className="App">
-      <Header {...{setOverlayOpen}} />
+      <Header {...{overlayCategories, setOverlayCategories}} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu {...{overlayOpen, setOverlayOpen}} />} />
+        <Route path="/" element={<Home />} /> 
+        <Route path="/menu" element={<Menu {...{setOverlayCategories, overlayCategories}} />} />
         <Route path="/screenings" element={<Screenings />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reviews" element={<Reviews />} />
