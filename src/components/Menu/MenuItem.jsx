@@ -13,7 +13,7 @@ const MenuItem = ({ item, category, buttonHandler }) => {
         </div>
         <div className={styles.btnRow}>
           <p>${(Math.round(price * 100) / 100).toFixed(2)}</p>
-          <button onClick={() => buttonHandler(id, price)}>
+          <button onClick={() => buttonHandler(id, price, title, image)}>
             <img src="/images/plus-icon.svg" />
           </button>
         </div>

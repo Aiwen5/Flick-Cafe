@@ -1,0 +1,21 @@
+.cartList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartItem .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cartItem img {
+  width: 100px;
+}
