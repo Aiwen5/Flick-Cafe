@@ -45,11 +45,11 @@ export default function Menu({setOverlayCategories}) {
       <Banner
         bannerText="Menu"
         bannerDesc="From meticulously crafted coffee blends to classic popcorn and candy delights, 
-our menu is designed to elevate your cinematic experience."
+        our menu is designed to elevate your cinematic experience."
         bannerImage="/images/menuBanner.png"
       />
       <div className={styles.menuContainer}>
-        {!!menuData && Object.values(menuData).map((data, index) => {
+        {menuData && Object.values(menuData).map((data, index) => {
           const { category } = data;
           return (
             <div key={`menudata-${index}`}>
@@ -58,7 +58,7 @@ our menu is designed to elevate your cinematic experience."
                 <div className={styles.items}>
                   <div>
                     <h3 className={styles.title}>{category}</h3>
-                    <div className={styles.itemsRow}>
+                    <div className={styles.menuItemContainer}>
                       {data.items.map((item, index) => {
                         return (
                           <MenuItem key={`item-${index}`} {...{ item, category, buttonHandler }} />

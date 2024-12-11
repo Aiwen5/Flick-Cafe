@@ -3,6 +3,13 @@
   padding-bottom: 120px;
 }
 
+.menuItemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
 .items {
   max-width: 1516px;
   margin: auto;

@@ -23,7 +23,7 @@ const Confirmed = () => {
         <div className={styles.order}>
           <div className={styles.row}>
             <p>Order for:</p>
-            <p>{!!firstName ? `${!!firstName && firstName} ${!!lastName && lastName}` : 'Yves Rene Shema'}</p>
+            <p>{firstName ? `${firstName} ${lastName}` : 'Yves Rene Shema'}</p>
           </div>
           <div className={styles.row}>
             <p>Order ready in:</p>

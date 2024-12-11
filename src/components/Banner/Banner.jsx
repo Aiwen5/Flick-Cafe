@@ -7,8 +7,10 @@ export default function Banner({ bannerText, bannerDesc, bannerImage }) {
   return (
     <div className={styles.bannerContainer}>
       <img className={styles.bannerImage} src={bannerImage} alt="banner" />
-      <h2 className={styles.bannerText}>{bannerText}</h2>
-      <p className={styles.bannerDesc}>{bannerDesc}</p>
+      <div className={styles.bannerContent}>
+        <h2 className={styles.bannerText}>{bannerText}</h2>
+        <div className={styles.bannerDesc}>{bannerDesc}</div>
+      </div>
     </div>
   );
 }
